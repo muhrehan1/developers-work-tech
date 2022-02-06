@@ -16,4 +16,8 @@ use App\Http\Controllers\DevelopersWorkTechController;
 //Route::get('/', function () {
 //    return view('welcome');
 //});
-Route::get('/',[\App\Http\Controllers\DevelopersWorkTechController::class,'index'])->name('MainHome');
+Route::get('/',[DevelopersWorkTechController::class,'index'])->name('MainHome');
+Route::get('/about/Developers-Work-Tech',[DevelopersWorkTechController::class,'about'])->name('About');
+Route::get('/Contact/Developers-Work-Tech',[DevelopersWorkTechController::class,'contact'])->name('Contact');
+Route::get('/software-developement',[DevelopersWorkTechController::class,'software-devlopment'])->name('software-development');
+
