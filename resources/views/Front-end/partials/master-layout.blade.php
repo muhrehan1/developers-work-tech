@@ -36,10 +36,12 @@
     <link rel="stylesheet" type="text/css" href="{{asset('assets/style.css')}}"> <!-- This stylesheet dynamically changed from style.less -->
     <!-- responsive css -->
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/responsive.css')}}">
-    <!--[if lt IE 9]>
+{{--    <!--[if lt IE 9]>--}}
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+
 </head>
 <body class="defult-home">
 
@@ -98,7 +100,7 @@
             <div class="menu-area menu-sticky">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-lg-3">
+                        <div class="col-lg-2">
                             <div class="logo-part">
                                 <a href="{{route('MainHome')}}">
                                     <img class="normal-logo" src="{{asset('assets/images/dev-white.png')}}" alt="logo">
@@ -111,7 +113,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="col-lg-9 text-right">
+                        <div class="col-lg-10 text-right">
                             <div class="rs-menu-area">
                                 <div class="main-menu">
                                     <nav class="rs-menu pr-70 lg-pr-50 md-pr-0">
@@ -119,78 +121,31 @@
                                             <li class="rs-mega-menu menu-item-has-children current-menu-item"> <a href="{{route('MainHome')}}">Home</a>
 
                                             </li>
-                                            <li>
-                                                <a href="{{route('About')}}">About</a>
-                                            </li>
                                             <li class="menu-item-has-children">
                                                 <a href="#">Services</a>
                                                 <ul class="sub-menu">
-                                                    <li><a href="software-development.html">Software Development</a> </li>
-                                                    <li><a href="web-development.html">Web Development</a> </li>
-                                                    <li><a href="analytic-solutions.html">Analytic Solutions</a> </li>
-                                                    <li><a href="cloud-and-devops.html">Cloud and DevOps</a></li>
-                                                    <li><a href="product-design.html">Product Design</a> </li>
-                                                    <li><a href="data-center.html">Data Center</a> </li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item-has-children">
-                                                <a href="#">Pages</a>
-                                                <ul class="sub-menu">
-                                                    <li class="menu-item-has-children">
-                                                        <a href="#">Services</a>
-                                                        <ul class="sub-menu">
-                                                            <li><a href="services1.html">Services 1</a></li>
-                                                            <li><a href="services2.html">Services 2</a></li>
-                                                            <li><a href="services3.html">Services 3</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <a href="our-team.html">Our Team</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="single-team.html">Single Team</a>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="#">Case Studies</a>
-                                                        <ul class="sub-menu">
-                                                            <li><a href="case-studies-style1.html">Case Studies Style 1</a></li>
-                                                            <li><a href="case-studies-style2.html">Case Studies Style 2</a></li>
-                                                            <li><a href="case-studies-style3.html">Case Studies Style 3</a></li>
-                                                            <li><a href="case-studies-style4.html">Case Studies Style 4</a></li>
-                                                            <li><a href="case-studies-style5.html">Case Studies Style 5</a></li>
-                                                            <li><a href="case-studies-style6.html">Case Studies Style 6</a></li>
-                                                            <li><a href="case-studies-style7.html">Case Studies Style 7</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="menu-item-has-children">
-                                                        <a href="shop.html">Shop</a>
-                                                        <ul class="sub-menu">
-                                                            <li><a href="shop.html">Shop</a></li>
-                                                            <li><a href="shop-single.html">Shop Single</a></li>
-                                                            <li><a href="cart.html">Cart</a></li>
-                                                            <li><a href="checkout.html">Checkout</a></li>
-                                                            <li><a href="my-account.html">My Account</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li>
-                                                        <a href="pricing.html">Pricing</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="faq.html">Faq</a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="error.html">404</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li class="menu-item-has-children">
-                                                <a href="blog.html">Blog</a>
-                                                <ul class="sub-menu">
-                                                    <li><a href="blog.html">Blog</a> </li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                                    <li><a href="{{route('software-development')}}">Website Design</a> </li>
+                                                    <li><a href="{{route('web-development')}}">Wordpress Development</a> </li>
+                                                    <li><a href="{{route('analytics_solutions')}}">E-Commerce </a> </li>
+                                                    <li><a href="{{route('cloud_and_devop')}}">Logo Design</a></li>
+                                                    <li><a href="{{route('product_design')}}">Shopify</a> </li>
+                                                    <li><a href="{{route('datacenter')}}">Web Apps</a> </li>
+                                                    <li><a href="{{route('datacenter')}}">Digital Marketing</a> </li>
                                                 </ul>
                                             </li>
                                             <li>
+                                                <a href="{{route('About')}}">Portfolio</a>
+                                            </li>
+                                            <li>
+                                                <a href="{{route('About')}}">Packages</a>
+                                            </li>
+                                            <li>
+                                                <a href="{{route('About')}}">Combo Packages</a>
+                                            </li>
+                                            <li>
+                                                <a href="{{route('About')}}">About</a>
+                                            </li>
+                                                <li>
                                                 <a href="{{route('Contact')}}">Contact</a>
                                             </li>
                                         </ul> <!-- //.nav-menu -->
@@ -369,8 +324,10 @@
     </div>
 </div>
 <!-- Search Modal End -->
-
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <!-- modernizr js -->
+
 <script src="{{asset('assets/js/modernizr-2.8.3.min.js')}}"></script>
 <!-- jquery latest version -->
 <script src="{{asset('assets/js/jquery.min.js')}}"></script>

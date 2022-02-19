@@ -6,9 +6,9 @@
         <h1 class="page-title">About</h1>
         <ul>
             <li title="Braintech - IT Solutions and Technology Startup HTML Template">
-                <a class="active" href="index.html">Home</a>
+                <a class="active" href="{{route('MainHome')}}">Home</a>
             </li>
-            <li>About</li>
+            <li>{{$breadcrumb_about}}</li>
         </ul>
     </div>
 </div>
@@ -21,10 +21,10 @@
             <div class="col-lg-6 md-mb-30">
                 <div class="rs-animation-shape">
                     <div class="images">
-                        <img src="assets/images/about/about-3.png" alt="">
+                        <img src="{{asset('assets/images/about/about-3.png')}}" alt="">
                     </div>
                     <div class="middle-image2">
-                        <img class="dance3" src="assets/images/about/effect-1.png" alt="">
+                        <img class="dance3" src="{{asset('assets/images/about/effect-1.png')}}" alt="">
                     </div>
                 </div>
             </div>
@@ -43,13 +43,13 @@
                         </p>
                     </div>
                     <div class="btn-part">
-                        <a class="readon learn-more" href="contact.html">Learn-More</a>
+                        <a class="readon learn-more" href="{{route('Contact')}}">Learn-More</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="shape-image">
-            <img class="top dance" src="assets/images/about/dotted-3.png" alt="">
+            <img class="top dance" src="{{asset('assets/images/about/dotted-3.png')}}" alt="">
         </div>
     </div>
 </div>
@@ -69,7 +69,7 @@
                 <div class="team-item-wrap">
                     <div class="team-wrap">
                         <div class="image-inner">
-                            <a href="single-team.html"><img src="assets/images/team/style1/1.jpg" alt=""></a>
+                            <a href="single-team.html"><img src="{{asset('assets/images/team/style1/1.jpg')}}" alt=""></a>
                         </div>
                     </div>
                     <div class="team-content text-center">
@@ -86,7 +86,7 @@
                 <div class="team-item-wrap">
                     <div class="team-wrap">
                         <div class="image-inner">
-                            <a href="single-team.html"><img src="assets/images/team/style1/2.jpg" alt=""></a>
+                            <a href="single-team.html"><img src="{{asset('assets/images/team/style1/2.jpg')}}" alt=""></a>
                         </div>
                     </div>
                     <div class="team-content text-center">
@@ -103,7 +103,7 @@
                 <div class="team-item-wrap">
                     <div class="team-wrap">
                         <div class="image-inner">
-                            <a href="single-team.html"><img src="assets/images/team/style1/3.jpg" alt=""></a>
+                            <a href="single-team.html"><img src="{{asset('assets/images/team/style1/3.jpg')}}" alt=""></a>
                         </div>
                     </div>
                     <div class="team-content text-center">
@@ -120,7 +120,7 @@
                 <div class="team-item-wrap">
                     <div class="team-wrap">
                         <div class="image-inner">
-                            <a href="single-team.html"><img src="assets/images/team/style1/4.jpg" alt=""></a>
+                            <a href="single-team.html"><img src="{{asset('assets/images/team/style1/4.jpg')}}" alt=""></a>
                         </div>
                     </div>
                     <div class="team-content text-center">
@@ -137,7 +137,7 @@
                 <div class="team-item-wrap">
                     <div class="team-wrap">
                         <div class="image-inner">
-                            <a href="single-team.html"><img src="assets/images/team/style1/5.jpg" alt=""></a>
+                            <a href="single-team.html"><img src="{{asset('assets/images/team/style1/5.jpg')}}" alt=""></a>
                         </div>
                     </div>
                     <div class="team-content text-center">
@@ -154,7 +154,7 @@
                 <div class="team-item-wrap">
                     <div class="team-wrap">
                         <div class="image-inner">
-                            <a href="single-team.html"><img src="assets/images/team/style1/6.jpg" alt=""></a>
+                            <a href="single-team.html"><img src="{{asset('assets/images/team/style1/6.jpg')}}" alt=""></a>
                         </div>
                     </div>
                     <div class="team-content text-center">
@@ -171,7 +171,7 @@
                 <div class="team-item-wrap">
                     <div class="team-wrap">
                         <div class="image-inner">
-                            <a href="single-team.html"><img src="assets/images/team/style1/7.jpg" alt=""></a>
+                            <a href="single-team.html"><img src="{{asset('assets/images/team/style1/7.jpg')}}" alt=""></a>
                         </div>
                     </div>
                     <div class="team-content text-center">
@@ -188,7 +188,7 @@
                 <div class="team-item-wrap">
                     <div class="team-wrap">
                         <div class="image-inner">
-                            <a href="single-team.html"><img src="assets/images/team/style1/8.jpg" alt=""></a>
+                            <a href="single-team.html"><img src="{{asset('assets/images/team/style1/8.jpg')}}" alt=""></a>
                         </div>
                     </div>
                     <div class="team-content text-center">
@@ -205,7 +205,7 @@
                 <div class="team-item-wrap">
                     <div class="team-wrap">
                         <div class="image-inner">
-                            <a href="single-team.html"><img src="assets/images/team/style1/9.jpg" alt=""></a>
+                            <a href="single-team.html"><img src="{{asset('assets/images/team/style1/9.jpg')}}" alt=""></a>
                         </div>
                     </div>
                     <div class="team-content text-center">
@@ -222,7 +222,7 @@
                 <div class="team-item-wrap">
                     <div class="team-wrap">
                         <div class="image-inner">
-                            <a href="single-team.html"><img src="assets/images/team/style1/1.jpg" alt=""></a>
+                            <a href="single-team.html"><img src="{{asset('assets/images/team/style1/1.jpg')}}" alt=""></a>
                         </div>
                     </div>
                     <div class="team-content text-center">
@@ -239,7 +239,7 @@
                 <div class="team-item-wrap">
                     <div class="team-wrap">
                         <div class="image-inner">
-                            <a href="single-team.html"><img src="assets/images/team/style1/2.jpg" alt=""></a>
+                            <a href="single-team.html"><img src="{{asset('assets/images/team/style1/2.jpg')}}" alt=""></a>
                         </div>
                     </div>
                     <div class="team-content text-center">
@@ -256,7 +256,7 @@
                 <div class="team-item-wrap">
                     <div class="team-wrap">
                         <div class="image-inner">
-                            <a href="single-team.html"><img src="assets/images/team/style1/3.jpg" alt=""></a>
+                            <a href="single-team.html"><img src="{{asset('assets/images/team/style1/3.jpg')}}" alt=""></a>
                         </div>
                     </div>
                     <div class="team-content text-center">
@@ -307,7 +307,7 @@
                 <div class="addon-process">
                     <div class="process-wrap">
                         <div class="process-img">
-                            <img src="assets/images/process/1.png" alt="">
+                            <img src="{{asset('assets/images/process/1.png')}}" alt="">
                         </div>
                         <div class="process-text">
                             <h3 class="title">Discovery</h3>
@@ -319,7 +319,7 @@
                 <div class="addon-process">
                     <div class="process-wrap">
                         <div class="process-img">
-                            <img src="assets/images/process/2.png" alt="">
+                            <img src="{{asset('assets/images/process/2.png')}}" alt="">
                         </div>
                         <div class="process-text">
                             <h3 class="title"> Planning</h3>
@@ -331,7 +331,7 @@
                 <div class="addon-process">
                     <div class="process-wrap">
                         <div class="process-img">
-                            <img src="assets/images/process/3.png" alt="">
+                            <img src="{{asset('assets/images/process/3.png')}}" alt="">
                         </div>
                         <div class="process-text">
                             <h3 class="title">Execute</h3>
@@ -343,7 +343,7 @@
                 <div class="addon-process">
                     <div class="process-wrap">
                         <div class="process-img">
-                            <img src="assets/images/process/4.png" alt="">
+                            <img src="{{asset('assets/images/process/4.png')}}" alt="">
                         </div>
                         <div class="process-text">
                             <h3 class="title">Deliver</h3>
@@ -372,7 +372,7 @@
                         Silver
                     </div>
                     <div class="pricing-icon">
-                        <img src="assets/images/pricing/main-home/icons/1.png" alt="">
+                        <img src="{{asset('assets/images/pricing/main-home/icons/1.png')}}" alt="">
                     </div>
                     <div class="pricing-table-price">
                         <div class="pricing-table-bags">
@@ -400,7 +400,7 @@
                         Gold
                     </div>
                     <div class="pricing-icon">
-                        <img src="assets/images/pricing/main-home/icons/2.png" alt="">
+                        <img src="{{asset('assets/images/pricing/main-home/icons/2.png')}}" alt="">
                     </div>
                     <div class="pricing-table-price">
                         <div class="pricing-table-bags">
@@ -428,7 +428,7 @@
                         Platinum
                     </div>
                     <div class="pricing-icon">
-                        <img src="assets/images/pricing/main-home/icons/3.png" alt="">
+                        <img src="{{asset('assets/images/pricing/main-home/icons/3.png')}}" alt="">
                     </div>
                     <div class="pricing-table-price">
                         <div class="pricing-table-bags">

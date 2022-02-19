@@ -38,4 +38,17 @@ class Handler extends ExceptionHandler
             //
         });
     }
+//
+//    public function render($request , Exception $e)
+//    {
+//                if ($this->isHttpException($e)){
+//                    $code =  $e->getStatusCode();
+//                    if ($code == '404'){
+//                        return response()->view('Front-end.404');
+//                    }
+//                }
+//                return parent::render($request,$e);
+//
+//    }
 }
+
